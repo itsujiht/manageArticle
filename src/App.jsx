@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -35,10 +33,14 @@ function App() {
 
     return (
         <>
-            <div className='app-body'>
+            <div className='app-head'>
                 <h1>paper manager</h1>
+                {/* 検索バー */}
+            </div>
+            <div className='app-body'>
                 <button onClick={() => setCount((count) => count + 1)}>{count}</button>
                 <div className='tag-list'>
+                    <p>tags :</p>
                     {/* タグを並べてすぐに検索できるように */}
                 </div>
                 <div className='paper-card-container'>

@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0rem;
 }
 
 .logo {
@@ -41,7 +41,15 @@
 }
 
 .app-body {
-  margin : 10px 5% 10px 5%;
+  margin: 10px 5% 10px 5%;
+}
+
+.app-head {
+  width: 100%;
+  margin: 0;
+  padding: 0.1em 2%;
+  background-color: #282828;
+  border-bottom: 1px solid #555555;
 }
 
 .paper-card-container {
