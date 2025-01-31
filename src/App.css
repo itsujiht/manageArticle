@@ -1,8 +1,7 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
 }
 
 .logo {
@@ -39,4 +38,23 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.app-body {
+  margin : 10px 5% 10px 5%;
+}
+
+.paper-card-container {
+  width: 95%;
+  height: auto;
+  margin: 10px 2% 10px 2%;
+}
+
+.paper-card {
+  width: 95%;
+  height: auto;
+  margin: 15px 0;
+  padding: 5px 20px 5px 20px;
+  background-color: #2e2e2e;
+  border-left: 10px double #aaaaaa;
 }
