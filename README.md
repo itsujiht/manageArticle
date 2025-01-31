@@ -1,8 +1,19 @@
-# React + Vite
+# paper manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+論文管理アプリが作りたいので、作ります。
 
-Currently, two official plugins are available:
+### how to use
+bibtex形式の論文データをpublic/liter.bibに配置。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bibtexparserを用いてliter.jsonに変換(parser.py)。
+
+```
+pip3 install bibtexparser
+python3 parser.py
+```
+
+reactでdeployする。
+
+```
+npm run dev
+```
