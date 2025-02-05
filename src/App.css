@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   width: 100%;
   padding: 0rem;
 }
@@ -41,15 +40,41 @@
 }
 
 .app-body {
-  margin: 10px 5% 10px 5%;
+  margin: 10px 5% 80px 5%;
 }
 
 .app-head {
-  width: 100%;
   margin: 0;
   padding: 0.1em 2%;
   background-color: #282828;
   border-bottom: 1px solid #555555;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-head input {
+  margin: 4% 10px 4% 10px;
+  width: 25%;
+}
+
+.app-foot {
+  height: 100px;
+  margin: 0;
+  padding: 0.1em 2%;
+  background-color: #282828;
+  background: linear-gradient(0deg, #222222, #282828);
+  border-top: 1px solid #555555;
+  color: #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.app-foot img {
+  margin: 8px;
 }
 
 .paper-card-container {
@@ -65,4 +90,19 @@
   padding: 5px 20px 5px 20px;
   background-color: #2e2e2e;
   border-left: 10px double #aaaaaa;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.paper-card:hover {
+  border-color: #8d64ff;
+  background-color: #393939;
+}
+
+.tag-card {
+  margin: 2px;
+  color: #a0a0a0;
 }

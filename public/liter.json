@@ -1,42 +1,65 @@
 [
     {
-        "tags": "embodiment",
-        "memo": "なし",
-        "abstract": "身体性、知能、ロボットに関して幅広く非常に示唆に富む議論がされている。自律エージェントの設計原理の提案が特に意欲的。",
-        "size": "296p. B5",
-        "price": "13,000",
-        "isbn": "4-320-12032-9",
-        "contents": "第I部 知能の研究--基礎と課題,第II部 身体性認知科学の枠組み,第III部 さまざまなアプローチとエージェントの例,第IV部 知的システムの原理,第V部 設計と評価,第VI部 未来へ向けて",
-        "year": "2001",
-        "publisher": "共立出版",
-        "title": "知の創成 ---身体性認知科学への招待---",
+        "ID": "book:Pfeifer:知の創成",
         "author": "Rolf Pfeifer and Christian Scheier",
-        "ENTRYTYPE": "book",
-        "ID": "book:Pfeifer:知の創成"
-    },
-    {
-        "tags": "emotion",
+        "year": "2001",
+        "title": "知の創成 ---身体性認知科学への招待---",
+        "abstract": "身体性、知能、ロボットに関して幅広く非常に示唆に富む議論がされている。自律エージェントの設計原理の提案が特に意欲的。",
         "memo": "なし",
-        "abstract": "クオリア。",
-        "year": "1997",
-        "author": "Tye, Michael",
-        "title": "Qualia",
-        "ENTRYTYPE": "article",
-        "ID": "tye1997qualia"
+        "tags": [
+            "embodiment"
+        ]
     },
     {
-        "tags": "emotion, interoception, SMH",
-        "memo": "fMRIとIGTの関連が述べられている。",
-        "abstract": "SMH関連の概説",
-        "publisher": "心理学評論刊行会",
-        "year": "2014",
-        "pages": "98--123",
-        "number": "1",
-        "volume": "57",
-        "journal": "心理学評論",
+        "ID": "tye1997qualia",
+        "author": "Tye, Michael",
+        "year": "1997",
+        "title": "Qualia",
+        "abstract": "クオリア。",
+        "memo": "なし",
+        "tags": [
+            "emotion"
+        ]
+    },
+    {
+        "ID": "大平英樹2014感情的意思決定を支える脳と身体の機能的関連",
         "author": "大平英樹",
+        "year": "2014",
         "title": "感情的意思決定を支える脳と身体の機能的関連",
-        "ENTRYTYPE": "article",
-        "ID": "大平英樹2014感情的意思決定を支える脳と身体の機能的関連"
+        "abstract": "SMH関連の概説",
+        "memo": "fMRIとIGTの関連が述べられている。",
+        "tags": [
+            "emotion",
+            "interoception",
+            "SMH"
+        ]
+    },
+    {
+        "ID": "test",
+        "author": "test",
+        "year": "2000",
+        "title": "test",
+        "abstract": "test",
+        "memo": "memo",
+        "tags": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "abcdefghijk",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "LMNOP"
+        ]
     }
 ]
