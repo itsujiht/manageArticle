@@ -1,16 +1,5 @@
 [
     {
-        "ID": "book:Pfeifer:知の創成",
-        "author": "Rolf Pfeifer and Christian Scheier",
-        "year": "2001",
-        "title": "知の創成 ---身体性認知科学への招待---",
-        "abstract": "身体性、知能、ロボットに関して幅広く非常に示唆に富む議論がされている。自律エージェントの設計原理の提案が特に意欲的。",
-        "memo": "なし",
-        "tags": [
-            "embodiment"
-        ]
-    },
-    {
         "ID": "tye1997qualia",
         "author": "Tye, Michael",
         "year": "1997",
@@ -27,7 +16,44 @@
         "year": "2014",
         "title": "感情的意思決定を支える脳と身体の機能的関連",
         "abstract": "SMH関連の概説",
-        "memo": "fMRIとIGTの関連が述べられている。",
+        "memo": "fMRIとIGTの関連、free energy由来の計算論モデルが述べられている。",
+        "tags": [
+            "emotion",
+            "interoception",
+            "SMH",
+            "IGT"
+        ]
+    },
+    {
+        "ID": "James1884",
+        "author": "William James",
+        "year": "1884",
+        "title": "What is an Emotion?",
+        "abstract": "「悲しいから泣くのではなく、泣くから悲しい」という例のように身体反応、内受容感覚(内臓、骨格筋、血管(これはLangeが述べた))が脳に伝わることで情動が表出するとした。末梢起源説。",
+        "memo": "情動の末梢起源説について",
+        "tags": [
+            "emotion",
+            "interoception"
+        ]
+    },
+    {
+        "ID": "cannon1927james",
+        "author": "Cannon, Walter B",
+        "year": "1927",
+        "title": "The James-Lange theory of emotions: A critical examination and an alternative theory",
+        "abstract": "James-Lange説への批判。具体的な外部刺激とそれによって表出する情動の説明が不足していること、同じ身体反応から異なる情動を示すこと、末梢反応の誘発を阻害しても情動が起こりうる点などを指摘し、情動の起源は大脳辺縁系、視床下部などでの身体反応の評価にあるとした。情動的行動を抑制できないケースから、大脳皮質とは分離されていると考えている。",
+        "memo": "CannonとBirdによる中枢起源説",
+        "tags": [
+            "emotion"
+        ]
+    },
+    {
+        "ID": "Damasio1994",
+        "author": "A. R. Damasio",
+        "year": "1994",
+        "title": "Descartes’ Error",
+        "abstract": "内受容感覚由来の情動は不確かな環境において意思決定をドライブする役割があるということを腹内側前頭前野損傷の人が社会的意思決定で障害を持つことから提案した。",
+        "memo": "Damasioによるsomatic marker hypothesisの提唱、末梢起源の流れを汲んでいる",
         "tags": [
             "emotion",
             "interoception",
@@ -35,31 +61,753 @@
         ]
     },
     {
-        "ID": "test",
-        "author": "test",
-        "year": "2000",
-        "title": "test",
-        "abstract": "test",
-        "memo": "memo",
+        "ID": "panumate2016generic",
+        "author": "Panumate, Chetprayoon and Miyake, Youichiro and Iida, Hiroyuki",
+        "year": "2016",
+        "title": "A generic model for emotional ai in real-time multiplayer fighting games",
+        "abstract": "emotionをmoodやpersonality, memoryといった要素に分解してgame agentに実装した研究。",
+        "memo": "本当に情動なのかどうかは定かでない、心理学的な定義ともそぐわない情動のような何か。",
         "tags": [
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "abcdefghijk",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "LMNOP"
+            "emotionalAI",
+            "emotion"
+        ]
+    },
+    {
+        "ID": "misawa2012RL",
+        "author": "三澤秀明 and 松田充史 and 堀尾恵一",
+        "year": "2012",
+        "title": "強化学習と情動学習に基づく意思決定法: 利己的な判断による協調行動の創発",
+        "abstract": "協調行動と敵対行動という情動行動に注視してRLagentを実装。協調行動を学習。",
+        "memo": "情動的なstateパラメタをRLによって学習するらしい。",
+        "tags": [
+            "emotionalAI",
+            "emotion",
+            "RL"
+        ]
+    },
+    {
+        "ID": "zhou2018emotional",
+        "author": "Zhou, Hao and Huang, Minlie and Zhang, Tianyang and Zhu, Xiaoyan and Liu, Bing",
+        "year": "2018",
+        "title": "Emotional chatting machine: Emotional conversation generation with internal and external memory",
+        "abstract": "あらかじめ定義された情動と言語情報の結びつけを用いて対話をするchatBotの実装。",
+        "memo": "固定された情動での対応しかできない。",
+        "tags": [
+            "emotionalAI",
+            "emotion",
+            "chatBot"
+        ]
+    },
+    {
+        "ID": "article:Vincent2022",
+        "author": "Vincent Breton-Provencher, Gabrielle T. Drummond, Jiesi Feng, Yulong Li, Mriganka Sur",
+        "year": "2022",
+        "title": "Spatiotemporal dynamics of noradrenaline during learned behaviour",
+        "abstract": "マウスのLC-NA系の振る舞いと、報酬、罰を伴う行動の関連についての実験。LC-NA系が証拠の少ない行動を促し(不確実性のエンコーディング)、報酬の予測に対する罰のシグナルはLC-NAから広範なターゲット領域(線条体や海馬、PFCなど)に持続的な活動を促し、誤った行動の情報から目的行動への注意が高められるという結果。",
+        "memo": "LC-NA系の2つの大きな役割、不確実性に対する探索を促すこと、罰、予測誤差による注意機能の亢進。",
+        "tags": [
+            "LC-NA",
+            "neuromodulation"
+        ]
+    },
+    {
+        "ID": "Shea1996",
+        "author": "Shea, SA",
+        "year": "1996",
+        "title": "Behavioural and arousal-related influences on breathing in humans",
+        "abstract": "呼吸の覚醒や行動への影響について。詳細な神経メカニズムは未だわからないが、一部の例から脳幹や前頭葉から呼吸筋への入力の証拠が得られている。",
+        "memo": "あまり細かく読んでないです",
+        "tags": [
+            "respiration",
+            "emotion",
+            "arousal"
+        ]
+    },
+    {
+        "ID": "Bernardi2006",
+        "author": "Bernardi, L and Porta, C and Sleight, P",
+        "year": "2006",
+        "title": "Cardiovascular, cerebrovascular, and respiratory changes induced by different types of music in musicians and non-musicians: the importance of silence",
+        "abstract": "音楽と覚醒の関係。テンポと呼吸の関係について示唆されている。",
+        "memo": "HRVなどの呼吸心拍指標と音楽のテンポの関係。まあそれはそうよねという結果。音楽家は一般人よりテンポと呼吸の感度？が高いらしい。",
+        "tags": [
+            "respiration",
+            "emotion",
+            "arousal"
+        ]
+    },
+    {
+        "ID": "Hilton1982",
+        "author": "Hilton, S. M.",
+        "year": "1982",
+        "title": "The Defence-Arousal System and its Relevance for Circulatory and Respiratory Control",
+        "abstract": "防御反応と心血管反応、呼吸器系の反応について述べている。心血管系から筋骨格系への遠心性経路には動脈血圧の調節に関わるニューロン群があり、有害刺激に対して活性化するよう働いている可能性がある。",
+        "memo": "恐怖や怒りのような基本情動と血管系の反応の関連について、本能的なことに近い？",
+        "tags": [
+            "respiration",
+            "emotion"
+        ]
+    },
+    {
+        "ID": "Mizuhara2021",
+        "author": "水原啓太 and 入戸野宏",
+        "year": "2021",
+        "title": "呼吸位相が外界事象の知覚・認知に及ぼす効果",
+        "abstract": "呼吸位相、特に吸気と呼気で注意を高める、リラックスするといったところが顕著に変化する。",
+        "memo": "なし",
+        "tags": [
+            "respiration"
+        ]
+    },
+    {
+        "ID": "yousef2020deep",
+        "author": "Yousef, Ahmad",
+        "year": "2020",
+        "title": "Deep Breathing Governs Binocular Rivalry",
+        "abstract": "呼吸位相によって両眼視野闘争の知覚交替確率(平均交替時間)が変化する。",
+        "memo": "なし",
+        "tags": [
+            "respiration",
+            "BR"
+        ]
+    },
+    {
+        "ID": "Kimura2022",
+        "author": "木村健太 and 金山範明 and 片平健太郎",
+        "year": "2022",
+        "title": "心臓からの内受容信号はリスク下での意思決定を調節する",
+        "abstract": "拡張期と収縮期でリスク下での行動選択が変化する。",
+        "memo": "なし",
+        "tags": [
+            "interoception",
+            "SMH"
+        ]
+    },
+    {
+        "ID": "Ohsumi2018",
+        "author": "大隅尚広",
+        "year": "2018",
+        "title": "社会的意思決定における心臓活動と内受容感覚の機能的役割",
+        "abstract": "心拍数が減ることによって社会的行動での公正な行動を促される。リスク回避的。",
+        "memo": "なし",
+        "tags": [
+            "interoception",
+            "SMH"
+        ]
+    },
+    {
+        "ID": "mayer2022gut",
+        "author": "Mayer, Emeran A and Nance, Karina and Chen, Shelley",
+        "year": "2022",
+        "title": "The gut--brain axis",
+        "abstract": "脳腸相関について、腸内環境悪い→ストレスを感じやすい",
+        "memo": "全然読んでない",
+        "tags": [
+            "gutBrainAxis",
+            "interoception"
+        ]
+    },
+    {
+        "ID": "benning2005psychopathy",
+        "author": "Benning, Stephen D and Patrick, Christopher J and Iacono, William G",
+        "year": "2005",
+        "title": "Psychopathy, startle blink modulation, and electrodermal reactivity in twin men",
+        "abstract": "罪悪感や罰への感受性が低い性格特性、サイコパシーの人はリスク選択下において心拍変化が鈍い。",
+        "memo": "内受容精度、自己受容認識的な。",
+        "tags": [
+            "interoception",
+            "SMH"
+        ]
+    },
+    {
+        "ID": "werner2013interoceptive",
+        "author": "Werner, Natalie S and Schweitzer, Nicola and Meindl, Thomas and Duschek, Stefan and Kambeitz, Joseph and Schandry, Rainer",
+        "year": "2013",
+        "title": "Interoceptive awareness moderates neural activity during decision-making",
+        "abstract": "低い罰への感覚が内受容への意識によって改善する。",
+        "memo": "SCRを見せるとパフォーマンス向上→自己受容認識の高さが合理的判断を促す",
+        "tags": [
+            "interoception",
+            "SMH"
+        ]
+    },
+    {
+        "ID": "fiene2015investigating",
+        "author": "Fiene, Lisa and Brownlow, Charlotte",
+        "year": "2015",
+        "title": "Investigating interoception and body awareness in adults with and without autism spectrum disorder",
+        "abstract": "ASDの人は内受容、身体への認識が低い。",
+        "memo": "なし",
+        "tags": [
+            "interoception"
+        ]
+    },
+    {
+        "ID": "paulus2010interoception",
+        "author": "Paulus, Martin P and Stein, Murray B",
+        "year": "2010",
+        "title": "Interoception in anxiety and depression",
+        "abstract": "鬱や心配性の人は内受容認識が低い。",
+        "memo": "なし",
+        "tags": [
+            "interoception"
+        ]
+    },
+    {
+        "ID": "moriguchi2013neuroimaging",
+        "author": "Moriguchi, Yoshiya and Komaki, Gen",
+        "year": "2013",
+        "title": "Neuroimaging studies of alexithymia: physical, affective, and social perspectives",
+        "abstract": "情動状態を知ることができないアレキシサイミアは内受容の自己認識の低さ、気づきの欠如に関係する。",
+        "memo": "なし",
+        "tags": [
+            "interoception"
+        ]
+    },
+    {
+        "ID": "bechara1994insensitivity",
+        "author": "Bechara, Antoine and Damasio, Antonio R and Damasio, Hanna and Anderson, Steven W",
+        "year": "1994",
+        "title": "Insensitivity to future consequences following damage to human prefrontal cortex",
+        "abstract": "IGT結果とPFC損傷の関連",
+        "memo": "なし",
+        "tags": [
+            "SMH",
+            "IGT",
+            "interoception"
+        ]
+    },
+    {
+        "ID": "bechara1996failure",
+        "author": "Bechara, Antoine and Tranel, Daniel and Damasio, Hanna and Damasio, Antonio R",
+        "year": "1996",
+        "title": "Failure to respond autonomically to anticipated future outcomes following damage to prefrontal cortex",
+        "abstract": "IGT",
+        "memo": "なし",
+        "tags": [
+            "SMH",
+            "IGT",
+            "interoception"
+        ]
+    },
+    {
+        "ID": "bechara1997deciding",
+        "author": "Bechara, Antoine and Damasio, Hanna and Tranel, Daniel and Damasio, Antonio R",
+        "year": "1997",
+        "title": "Deciding advantageously before knowing the advantageous strategy",
+        "abstract": "IGTの選択傾向には段階的なフェーズが存在する。",
+        "memo": "なし",
+        "tags": [
+            "SMH",
+            "IGT",
+            "interoception"
+        ]
+    },
+    {
+        "ID": "bechara1999different",
+        "author": "Bechara, Antoine and Damasio, Hanna and Damasio, Antonio R and Lee, Gregory P",
+        "year": "1999",
+        "title": "Different contributions of the human amygdala and ventromedial prefrontal cortex to decision-making",
+        "abstract": "扁桃体とvmPFCの役割について述べている？",
+        "memo": "よく読んでいない",
+        "tags": [
+            "SMH",
+            "IGT",
+            "interoception"
+        ]
+    },
+    {
+        "ID": "janbesaraei2024human",
+        "author": "Janbesaraei, Sherwin Nedaei and Rasanan, Amir Hosein Hadian and Nejati, Vahid and Rad, Jamal Amani",
+        "year": "2024",
+        "title": "Do Human Reinforcement Learning Models Account for Key Experimental Choice Patterns in the Iowa Gambling Task?",
+        "abstract": "IGTの数理モデルについてのreview",
+        "memo": "なし",
+        "tags": [
+            "IGT",
+            "interoception",
+            "RL"
+        ]
+    },
+    {
+        "ID": "busemeyer2002contribution",
+        "author": "Busemeyer, Jerome R and Stout, Julie C",
+        "year": "2002",
+        "title": "A contribution of cognitive decision models to clinical assessment: decomposing performance on the Bechara gambling task.",
+        "abstract": "最初の強化学習過程IGTモデルであるExpectation-Valence学習モデル",
+        "memo": "期待値を蓄積するだけ、softmax確率で選択確率を更新",
+        "tags": [
+            "IGT",
+            "RL"
+        ]
+    },
+    {
+        "ID": "lin2007deck",
+        "author": "Lin, Ching-Hung and Chiu, Yao-Chu and Lee, Po-Lei and Hsieh, Jen-Chuen",
+        "year": "2007",
+        "title": "Is deck B a disadvantageous deck in the Iowa Gambling Task?",
+        "abstract": "IGTにおける勝率(+の報酬を得られる確率)が高い選択へ選択が集中する勝率効果について",
+        "memo": "なし",
+        "tags": [
+            "IGT"
+        ]
+    },
+    {
+        "ID": "chiu2008immediate",
+        "author": "Chiu, Yao-Chu and Lin, Ching-Hung and Huang, Jong-Tsun and Lin, Shuyeu and Lee, Po-Lei and Hsieh, Jen-Chuen",
+        "year": "2008",
+        "title": "Immediate gain is long-term loss: Are there foresighted decision makers in the Iowa Gambling Task?",
+        "abstract": "IGTの勝率効果が強い性質であることを様々な分布で示している",
+        "memo": "なし",
+        "tags": [
+            "IGT"
+        ]
+    },
+    {
+        "ID": "ahn2014decision",
+        "author": "Ahn, Woo-Young and Vasilev, Georgi and Lee, Sung-Ha and Busemeyer, Jerome R and Kruschke, John K and Bechara, Antoine and Vassileva, Jasmin",
+        "year": "2014",
+        "title": "Decision-making in stimulant and opiate addicts in protracted abstinence: evidence from computational modeling with pure users",
+        "abstract": "IGTの数理モデルであるProspect-Valence学習とValue-plus-Perseveranceモデルについて",
+        "memo": "なし",
+        "tags": [
+            "IGT",
+            "RL"
+        ]
+    },
+    {
+        "ID": "haines2018outcome",
+        "author": "Haines, Nathaniel and Vassileva, Jasmin and Ahn, Woo-Young",
+        "year": "2018",
+        "title": "The outcome-representation learning model: A novel reinforcement learning model of the iowa gambling task",
+        "abstract": "outcome-representation学習モデルについて。PVLなどより高い精度とパラメタと精神疾患などの異常との相関がある。",
+        "memo": "なし",
+        "tags": [
+            "IGT",
+            "RL"
+        ]
+    },
+    {
+        "ID": "moreno2023outcome",
+        "author": "Moreno-Padilla, Mar{\\'\\i}a and Alacreu-Crespo, Adri{\\'a}n and Guillaume, Sebastien and Reyes del Paso, Gustavo A",
+        "year": "2023",
+        "title": "The outcome-representation learning model: impairments in decision-making in adolescents with excess weight",
+        "abstract": "過体重の人はIGTのパフォーマンスが低いことをORLでモデル化",
+        "memo": "なし",
+        "tags": [
+            "IGT",
+            "RL"
+        ]
+    },
+    {
+        "ID": "kawahara2022uncertain",
+        "author": "河原哲雄",
+        "year": "2022",
+        "title": "不確実な状況における学習とエフォートフル・コントロール",
+        "abstract": "ORLの注意パラメタと選択的注意に関する心理指標が相関する",
+        "memo": "エフォートフルコントロールと言われてもまあ相関はあるよねという感じ",
+        "tags": [
+            "IGT",
+            "RL"
+        ]
+    },
+    {
+        "ID": "ligneul2019sequential",
+        "author": "Ligneul, Romain",
+        "year": "2019",
+        "title": "Sequential exploration in the Iowa gambling task: validation of a new computational model in a large dataset of young and old healthy participants",
+        "abstract": "Value-plus-Explorarionモデル、指向性探索と非指向性探索を明示的に表現、explorationとexploitationのバランスに注目した",
+        "memo": "なし",
+        "tags": [
+            "IGT",
+            "RL"
+        ]
+    },
+    {
+        "ID": "aghajanian1977evidence",
+        "author": "Aghajanian, GK and Cedarbaum, JM and Wang, RY",
+        "year": "1977",
+        "title": "Evidence for norepinephrine-mediated collateral inhibition of locus coeruleus neurons",
+        "abstract": "LCのNA作動性ニューロンについて調べた",
+        "memo": "なし",
+        "tags": [
+            "LC-NA"
+        ]
+    },
+    {
+        "ID": "strawn2008noradrenergic",
+        "author": "Strawn, Jeffrey R and Geracioti Jr, TD",
+        "year": "2008",
+        "title": "Noradrenergic dysfunction and the psychopharmacology of posttraumatic stress disorder",
+        "abstract": "PTSD患者はその記憶の想起時にNA系が強く反応",
+        "memo": "注意機能が暴走しているみたいな",
+        "tags": [
+            "LC-NA"
+        ]
+    },
+    {
+        "ID": "bondareff1982loss",
+        "author": "Bondareff, William and Mountjoy, Christopher Q and Roth, Martin",
+        "year": "1982",
+        "title": "Loss of neurons of origin of the adrenergic projection to cerebral cortex (nucleus locus ceruleus) in senile dementia",
+        "abstract": "老年性アルツハイマー患者はLCニューロンの8割がない",
+        "memo": "なし",
+        "tags": [
+            "LC-NA"
+        ]
+    },
+    {
+        "ID": "diamond2007temporal",
+        "author": "Diamond, David M and Campbell, Adam M and Park, Collin R and Halonen, Joshua and Zoladz, Phillip R",
+        "year": "2007",
+        "title": "The temporal dynamics model of emotional memory processing: A synthesis on the neurobiological basis of stress-induced amnesia, flashbulb and traumatic memories, and the Yerkes-Dodson law",
+        "abstract": "タスクパフォーマンスとLC-NA系の活動の間に逆U字が見られる",
+        "memo": "NAの覚醒との関連、Yerkes-Dodsonの法則からも推測できる",
+        "tags": [
+            "LC-NA",
+            "invU",
+            "neuromodulation"
+        ]
+    },
+    {
+        "ID": "astonjones2005",
+        "author": "Aston-Jones G, Cohen JD",
+        "year": "2005",
+        "title": "An integrative theory of locus coeruleus-norepinephrine function: adaptive gain and optimal performance",
+        "abstract": "LC活動の位相性と持続性の2つがexploration-exploitationに関連している。サルの実験とモデル化について",
+        "memo": "サルのLCは前帯状皮質とOFCから直接入力を受ける",
+        "tags": [
+            "LC-NA",
+            "RL"
+        ]
+    },
+    {
+        "ID": "xing2022",
+        "author": "Xing, Jinwei\nand Zou, Xinyun\nand Pilly, Praveen K.\nand Ketz, Nicholas A.\nand Krichmar, Jeffrey L.",
+        "year": "2022",
+        "title": "Adapting to Environment Changes Through Neuromodulation of Reinforcement Learning",
+        "abstract": "ACh系による記憶とNA系による新奇刺激への注意を元にしたRLagentの実装により2次元空間やMujoco上での環境(報酬系)変化への適応性を高める。",
+        "memo": "報酬系変化によって知識を利用したり、まっさらから学習し直すことによりスムーズな適応が可能",
+        "tags": [
+            "RL",
+            "neuromodulation"
+        ]
+    },
+    {
+        "ID": "sandi2008",
+        "author": "Sandi, Carmen and Gerstner, Wulfram and Luk\\v{s}ys, Gediminas",
+        "year": "2008",
+        "title": "Stress, noradrenaline, and realistic prediction of mouse behaviour using reinforcement learning",
+        "abstract": "マウスの強化学習の行動をモデル化、メタパラメタをLC活動などから推定。活動の高さが探索/利用率や割引率に影響を及ぼす傾向が見られる。",
+        "memo": "LC活動以外の情報も用いていることには注意",
+        "tags": [
+            "RL",
+            "neuromodulation",
+            "LC-NA"
+        ]
+    },
+    {
+        "ID": "usher1999role",
+        "author": "Usher, Marius and Cohen, Jonathan D and Servan-Schreiber, David and Rajkowski, Janusz and Aston-Jones, Gary",
+        "year": "1999",
+        "title": "The role of locus coeruleus in the regulation of cognitive performance",
+        "abstract": "サルの視覚弁別課題の振る舞いをSNNによるLCモデルとLC-NAによる神経修飾を考慮してモデル化。実際にも見られる位相性と持続性の活動が再現。",
+        "memo": "発火率に比例するような形でNA量が増えるのは妥当な気がするが、活性化ゲインはそうではない場合もあるのでこれが全てではない",
+        "tags": [
+            "LC-NA",
+            "neuromodulation"
+        ]
+    },
+    {
+        "ID": "benarroch2018locus",
+        "author": "Benarroch, Eduardo E",
+        "year": "2018",
+        "title": "Locus coeruleus",
+        "abstract": "青斑核、Locus Coeruleusの役割について。覚醒やストレス、注意、姿勢制御など。",
+        "memo": "なし",
+        "tags": [
+            "LC-NA",
+            "neuromodulation",
+            "arousal"
+        ]
+    },
+    {
+        "ID": "yackle2017breathing",
+        "author": "Yackle, Kevin and Schwarz, Lindsay A and Kam, Kaiwen and Sorokin, Jordan M and Huguenard, John R and Feldman, Jack L and Luo, Liqun and Krasnow, Mark A",
+        "year": "2017",
+        "title": "Breathing control center neurons that promote arousal in mice",
+        "abstract": "呼吸系CPGと青斑核ニューロンの経路について",
+        "memo": "これによって呼吸から認知系への経路がわかる",
+        "tags": [
+            "respiration",
+            "LC-NA"
+        ]
+    },
+    {
+        "ID": "quintero2017theoretical",
+        "author": "Quintero, Maria C and Putnam, Robert W and Cordovez, Juan M",
+        "year": "2017",
+        "title": "Theoretical perspectives on central chemosensitivity: CO2/H+-sensitive neurons in the locus coeruleus",
+        "abstract": "LCにCO2のrecepterが存在し、その影響でリズムが同期する。",
+        "memo": "なし",
+        "tags": [
+            "respiration",
+            "LC-NA"
+        ]
+    },
+    {
+        "ID": "molkov2014physiological",
+        "author": "Molkov, Yaroslav I and Zoccal, Daniel B and Baekey, David M and Abdala, Ana PL and Machado, Benedito H and Dick, Thomas E and Paton, Julian FR and Rybak, Ilya A",
+        "year": "2014",
+        "title": "Physiological and pathophysiological interactions between the respiratory central pattern generator and the sympathetic nervous system",
+        "abstract": "生理学的な呼吸器数理モデルについて",
+        "memo": "能動呼吸への切り替えとかもできるらしい",
+        "tags": [
+            "respiration"
+        ]
+    },
+    {
+        "ID": "yonekura2022neuromodulatory",
+        "author": "Yonekura, Shogo and Cueto, Julius and Kanazawa, Hoshinori and Atsumi, Noritoshi and Hirabayashi, Satoko and Iwamoto, Masami and Kuniyoshi, Yasuo",
+        "year": "2022",
+        "title": "A neuromodulatory model for determining the effect of emotion-respiration-cognition coupling on the time-to-respond",
+        "abstract": "呼吸青斑核カップリングを利用した意思決定モデルの実装がされており、刺激に対する反応時間の呼吸位相への依存性が示されている。",
+        "memo": "なし",
+        "tags": [
+            "respiration",
+            "LC-NA",
+            "neuromodulation"
+        ]
+    },
+    {
+        "ID": "usher2002neuromodulation",
+        "author": "Usher, Marius and Davelaar, Eddy J",
+        "year": "2002",
+        "title": "Neuromodulation of decision and response selection",
+        "abstract": "意思決定におけるNA神経修飾の役割理解の数理モデル",
+        "memo": "なし、よく読んでない",
+        "tags": [
+            "LC-NA",
+            "neuromodulation"
+        ]
+    },
+    {
+        "ID": "cao2021binocular",
+        "author": "Cao, Robin and Pastukhov, Alexander and Aleshin, Stepan and Mattia, Maurizio and Braun, Jochen",
+        "year": "2021",
+        "title": "Binocular rivalry reveals an out-of-equilibrium neural dynamics suited for decision-making",
+        "abstract": "perceptual decision makingでは根拠入力が遮断されるなどを反映したBRモデル",
+        "memo": "多安定系モデルと、その支配ダイナミクスが不確かな意思決定を反映している？",
+        "tags": [
+            "BR"
+        ]
+    },
+    {
+        "ID": "maekawa2019iowa",
+        "author": "前川亮 and 片渕一徳 and 乾敏郎",
+        "year": "2019",
+        "title": "アイオワ・ギャンブル課題における認知の切り替えに内受容感覚が与える影響",
+        "abstract": "IGTに逆転学習的手法を用いた実験。切り替えに気づくまでの試行数、切り替え直後の成績と内受容精度が正の相関。",
+        "memo": "心拍追跡で評価",
+        "tags": [
+            "SMH",
+            "IGT"
+        ]
+    },
+    {
+        "ID": "kahneman2013prospect",
+        "author": "Kahneman, Daniel and Tversky, Amos",
+        "year": "2013",
+        "title": "Prospect theory: An analysis of decision under risk",
+        "abstract": "プロスペクト理論について",
+        "memo": "なし",
+        "tags": [
+            "PT"
+        ]
+    },
+    {
+        "ID": "tversky1992advances",
+        "author": "Tversky, Amos and Kahneman, Daniel",
+        "year": "1992",
+        "title": "Advances in prospect theory: Cumulative representation of uncertainty",
+        "abstract": "Cumulative prospect theoryによって定式化。",
+        "memo": "なし",
+        "tags": [
+            "PT"
+        ]
+    },
+    {
+        "ID": "eshelman1993real",
+        "author": "Eshelman, Larry J and Schaffer, J David",
+        "year": "1993",
+        "title": "Real-coded genetic algorithms and interval-schemata",
+        "abstract": "実数値個体でのGAについて、BLXなど",
+        "memo": "なし",
+        "tags": [
+            "GA"
+        ]
+    },
+    {
+        "ID": "nakamura2018respiratory",
+        "author": "Nakamura, Nozomu H and Fukunaga, Masaki and Oku, Yoshitaka",
+        "year": "2018",
+        "title": "Respiratory modulation of cognitive performance during the retrieval process",
+        "abstract": "呼吸位相と認知パフォーマンスの関係。",
+        "memo": "呼気から吸気への転移が大きくパフォーマンスを揺るがす",
+        "tags": [
+            "respiration"
+        ]
+    },
+    {
+        "ID": "oyamada1998respiration",
+        "author": "Oyamada, Y and Ballantyne, D and M{\\\"u}ckenhoff, K and Scheid, P",
+        "year": "1998",
+        "title": "Respiration-modulated membrane potential and chemosensitivity of locus coeruleus neurones in the in vitro brainstem-spinal cord of the neonatal rat",
+        "abstract": "LCと呼吸の同期について",
+        "memo": "なし",
+        "tags": [
+            "respiration",
+            "LC-NA"
+        ]
+    },
+    {
+        "ID": "melnychuk2018coupling",
+        "author": "Melnychuk, Michael Christopher and Dockree, Paul M and O'Connell, Redmond G and Murphy, Peter R and Balsters, Joshua H and Robertson, Ian H",
+        "year": "2018",
+        "title": "Coupling of respiration and attention via the locus coeruleus: Effects of meditation and pranayama",
+        "abstract": "LCと呼吸の同期について",
+        "memo": "なし",
+        "tags": [
+            "respiration",
+            "LC-NA"
+        ]
+    },
+    {
+        "ID": "shiv2005dark",
+        "author": "Shiv, Baba and Loewenstein, George and Bechara, Antoine",
+        "year": "2005",
+        "title": "The dark side of emotion in decision-making: When individuals with decreased emotional reactions make more advantageous decisions",
+        "abstract": "脳損傷や薬物依存は投資判断におけるリスク感受性の低下と関連がある。健常ならば前の判断の影響を受ける。",
+        "memo": "なし",
+        "tags": [
+            "emotion",
+            "SMH"
+        ]
+    },
+    {
+        "ID": "dalgleish2004neuropsychological",
+        "author": "Dalgleish, Tim and Yiend, Jenny and Bramham, Jessica and Teasdale, John D and Ogilvie, Alan D and Malhi, Gin and Howard, Robert",
+        "year": "2004",
+        "title": "Neuropsychological processing associated with recovery from depression after stereotactic subcaudate tractotomy",
+        "abstract": "鬱などにおいて意思決定パフォーマンスの低さが報酬への感受性の低下を意味している",
+        "memo": "なし",
+        "tags": [
+            "emotion",
+            "SMH"
+        ]
+    },
+    {
+        "ID": "vijayraghavan2007inverted",
+        "author": "Vijayraghavan, Susheel and Wang, Min and Birnbaum, Shari G and Williams, Graham V and Arnsten, Amy FT",
+        "year": "2007",
+        "title": "Inverted-U dopamine D1 receptor actions on prefrontal neurons engaged in working memory",
+        "abstract": "適度なDopamineアゴニスト下ではworking memory関連のPFCニューロンが最も活性。",
+        "memo": "なし",
+        "tags": [
+            "neuromodulation",
+            "invU"
+        ]
+    },
+    {
+        "ID": "forte2021heart",
+        "author": "Forte, Giuseppe and Morelli, Matteo and Casagrande, Maria",
+        "year": "2021",
+        "title": "Heart rate variability and decision-making: Autonomic responses in making decisions",
+        "abstract": "HRVと意思決定パフォーマンスの関係。HRVが高い=落ち着いた呼吸ほど高い傾向。",
+        "memo": "なし",
+        "tags": [
+            "respiration",
+            "SMH"
+        ]
+    },
+    {
+        "ID": "moccia2021heart",
+        "author": "Moccia, Lorenzo and Quintigliano, Maria and Janiri, Delfina and De Martin, Valentina and Rogier, Guyonne and Sani, Gabriele and Janiri, Luigi and Velotti, Patrizia and Gallese, Vittorio and Speranza, Anna Maria and others",
+        "year": "2021",
+        "title": "Heart rate variability and interoceptive accuracy predict impaired decision-making in Gambling Disorder",
+        "abstract": "ギャンブル障害と低い内受容精度の関連",
+        "memo": "なし",
+        "tags": [
+            "emotion",
+            "SMH"
+        ]
+    },
+    {
+        "ID": "okada2019",
+        "author": "岡田直也 and 森山甲一 and 武藤敦子 and 松井藤五郎 and 犬塚信博",
+        "year": "2019",
+        "title": "ブレンド交叉を用いた GA による主観的効用の進化",
+        "abstract": "実数値GAを用いた主観的効用を用いたRLエージェントの設計",
+        "memo": "GA部分しか読んでません",
+        "tags": [
+            "GA"
+        ]
+    },
+    {
+        "ID": "beerendonk2024disinhibitory",
+        "author": "Beerendonk, Lola and Mej{\\'\\i}as, Jorge F and Nuiten, Stijn A and de Gee, Jan Willem and Fahrenfort, Johannes J and van Gaal, Simon",
+        "year": "2024",
+        "title": "A disinhibitory circuit mechanism explains a general principle of peak performance during mid-level arousal",
+        "abstract": "覚醒度-タスクパフォーマンスの逆U字型関係を示す神経モデルの実装。複数の抑制関係からなる。",
+        "memo": "あまり妥当かどうかはわからないが、構成論的にはそうなんだという感じ",
+        "tags": [
+            "arousal",
+            "invU"
+        ]
+    },
+    {
+        "ID": "eckhoff2009optimality",
+        "author": "Eckhoff, Philip and Wong-Lin, KongFatt and Holmes, Philip",
+        "year": "2009",
+        "title": "Optimality and robustness of a biophysical decision-making model under norepinephrine modulation",
+        "abstract": "LC-NA系の意思決定における影響を時間発展系のモデルで与えている",
+        "memo": "よく読んでません、力学系でパラメタを与えている？",
+        "tags": [
+            "LC-NA",
+            "neuromodulation"
+        ]
+    },
+    {
+        "ID": "kim2005psychophysical",
+        "author": "Kim, Chai-Youn and Blake, Randolph",
+        "year": "2005",
+        "title": "Psychophysical magic: rendering the visible ‘invisible’",
+        "abstract": "両眼視野闘争について",
+        "memo": "なし",
+        "tags": [
+            "BR"
+        ]
+    },
+    {
+        "ID": "molkov2010late",
+        "author": "Molkov, Yaroslav I and Abdala, Ana PL and Bacak, Bartholomew J and Smith, Jeffrey C and Paton, Julian FR and Rybak, Ilya A",
+        "year": "2010",
+        "title": "Late-expiratory activity: emergence and interactions with the respiratory CpG",
+        "abstract": "呼吸CPGのリズムパターンを生み出すメカニズムとモデルについて",
+        "memo": "よく読んでないです",
+        "tags": [
+            "respiration"
+        ]
+    },
+    {
+        "ID": "rubin2009multiple",
+        "author": "Rubin, Jonathan E and Shevtsova, Natalia A and Ermentrout, G Bard and Smith, Jeffrey C and Rybak, Ilya A",
+        "year": "2009",
+        "title": "Multiple rhythmic states in a model of the respiratory central pattern generator",
+        "abstract": "呼吸のCPGは外部刺激から再構成され、新しいリズムパターンを生み出す可能性がある",
+        "memo": "なし",
+        "tags": [
+            "respiration"
         ]
     }
 ]
