@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
     const [bibJson, setBibJson] = useState([]);
-    const [selectedTag, setSeletedTag] = useState(null);
+    const [selectedTags, setSelectedTags] = useState([]);
     const [selectedArticle, setSelectedArticle] = useState(null);
 
     const [searchQuery, setSearchQuery] = useState('');
@@ -34,7 +34,12 @@ function App() {
 
     const tagList = [...new Set(bibJson.flatMap(item => item.tags))];
 
-    const filteredBibJson = selectedTag ? bibJson.filter(bibJson => bibJson.tags.includes(selectedTag)) : bibJson;
+    const filteredBibJson = selectedTags.length > 0 ? bibJson.filter(article => selectedTags.every(tag => article.tags.includes(tag))) : bibJson;
+
+    const handleToggleTag = (tag) => {
+        tag === null ? setSelectedTags([]) : 
+        setSelectedTags((prevTags) => prevTags.includes(tag) ? prevTags.filter((t) => t !== tag) : [...prevTags, tag]);
+    };
 
     const handleSearchChange = (event) => {
         setSearchQuery(event.target.value);
@@ -51,18 +56,26 @@ function App() {
         <>
             <div className='app-head'>
                 <h1>paper manager</h1>
-                <input
-                    type="text"
-                    placeholder="🔍 Search by title or author"
-                    value={searchQuery}
-                    onChange={handleSearchChange}
-                />
+                <div className='search-head'>
+                    <input
+                        type="text"
+                        placeholder="🔍 Search by title or author"
+                        value={searchQuery}
+                        onChange={handleSearchChange}
+                    />
+                    <button onClick={() => setSearchQuery('')}>
+                        ×
+                    </button>
+                </div>
             </div>
             <div className='app-body'>
                 <div className='tag-list'>
                     <p>tags :</p>
+                    <button className='tag-card-off' onClick={() => handleToggleTag(null)}>
+                            tags-off
+                    </button>
                     {tagList.map((tag, index) => (
-                        <button className='tag-card' key={index} onClick={() => setSeletedTag(selectedTag === tag ? null : tag)} style={selectedTag === tag ? {color: '#ffffff', backgroundColor: '#393939', borderColor: '#ffb164', outline: '2px auto #ffb164'} : {}}>
+                        <button className='tag-card' key={index} onClick={() => handleToggleTag(tag)} style={selectedTags.includes(tag) ? {color: '#ffffff', backgroundColor: '#393939', borderColor: '#ffb164', outline: '2px auto #ffb164'} : {}}>
                             {tag}
                         </button>
                     ))}
@@ -107,6 +120,11 @@ function App() {
                             )}
                         </div>
                     ))}
+                    {searchFilteredArticles.length === 0 && (
+                        <div className='no-articles-found'>
+                            <h2>Oops! I coundn't find any articles.</h2>
+                        </div>
+                    )}
                 </div>
             </div>
             <div className='app-foot'>
