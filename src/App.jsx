@@ -13,7 +13,7 @@ function App() {
             try {
                 const response = await fetch('/liter.json');
                 const jsonData = await response.json();
-                setBibJson(jsonData);
+                setBibJson(jsonData.reverse());
             } catch(error) {
                 console.log("error :", error);
                 setBibJson([

@@ -766,18 +766,6 @@
         ]
     },
     {
-        "ID": "eckhoff2009optimality",
-        "author": "Eckhoff, Philip and Wong-Lin, KongFatt and Holmes, Philip",
-        "year": "2009",
-        "title": "Optimality and robustness of a biophysical decision-making model under norepinephrine modulation",
-        "abstract": "LC-NA系の意思決定における影響を時間発展系のモデルで与えている",
-        "memo": "よく読んでません、力学系でパラメタを与えている？",
-        "tags": [
-            "LC-NA",
-            "neuromodulation"
-        ]
-    },
-    {
         "ID": "kim2005psychophysical",
         "author": "Kim, Chai-Youn and Blake, Randolph",
         "year": "2005",
@@ -821,6 +809,192 @@
             "emotion",
             "SMH",
             "IGT"
+        ]
+    },
+    {
+        "ID": "simonovic2018performance",
+        "author": "Simonovic, Boban and Stupple, Edward JN and Gale, Maggie and Sheffield, David",
+        "year": "2018",
+        "title": "Performance under stress: An eye-tracking investigation of the Iowa Gambling Task (IGT)",
+        "abstract": "意識的な気づきのプロセスに注目し、IGT中の注意、反射的認知(?)、課題設定の認知はストレス下で低下することからIGTのストレス下での試行にはanaliticなプロセスがemotionalより有利に働くということを示している(dual process accountも示唆される)。",
+        "memo": "ストレスレベル=コルチゾール値の上昇が認知制御を混乱させ、注意や正確な情報処理を妨げる。直感的な処理を増やすTversky(2011)によるIGTのdual process理論(emotionalとanaliticの相互作用)についても述べている。",
+        "tags": [
+            "SMH",
+            "IGT",
+            "stress"
+        ]
+    },
+    {
+        "ID": "eckhoff2009optimality",
+        "author": "Eckhoff, Philip and Wong-Lin, KongFatt and Holmes, Philip",
+        "year": "2009",
+        "title": "Optimality and robustness of a biophysical decision-making model under norepinephrine modulation",
+        "abstract": "3錐体細胞と1抑制性介在ニューロンからなるSNN意思決定モデルによってLC-NAの効果をモデル化。LCのtonicな活動とphasicな活動をそれぞれ分けて考察している。tonicは逆U字のパフォーマンス、phasicは特定の条件を設けた場合は向上が見られた。",
+        "memo": "NEの修飾はニューロンのコンダクタンスを変更することで行われている。tonicな活動は記憶やネットワークリセットに関係している？",
+        "tags": [
+            "LC-NA",
+            "neuromodulation"
+        ]
+    },
+    {
+        "ID": "kozachkov2023building",
+        "author": "Kozachkov, Leo and Kastanenka, Ksenia V and Krotov, Dmitry",
+        "year": "2023",
+        "title": "Building transformers from neurons and astrocytes",
+        "abstract": "ニューロン以外にグリア細胞の一種であるアストロサイトを組み込んだネットワークでトランスフォーマーの役割を担うことができる",
+        "memo": "アストロサイトとニューロンによるフィードバックループは異なる時空間スケールを持っており、学習や記憶に影響しているらしい。",
+        "tags": [
+            "transformer",
+            "memory"
+        ]
+    },
+    {
+        "ID": "xu2025visualplanningletsthink",
+        "author": "Yi Xu and Chengzu Li and Han Zhou and Xingchen Wan and Caiqi Zhang and Anna Korhonen and Ivan Vulić",
+        "year": "2025",
+        "title": "Visual Planning: Let's Think Only with Images",
+        "abstract": "LLMによるマルチモーダル推論はさまざま行われているが、全て言語の空間を介した推論しかできない。実際には必ずしも必要なプロセスではないのにも関わらず。画像表現のみから推論するモデルを強化学習の枠組みから提案する。VPRL。しかも既存のlanguage-basedよりもoutperformしている。",
+        "memo": "なし",
+        "tags": [
+            "RL",
+            "visual"
+        ]
+    },
+    {
+        "ID": "seth2013interoceptive",
+        "author": "Seth, Anil K",
+        "year": "2013",
+        "title": "Interoceptive inference, emotion, and the embodied self",
+        "abstract": "外受容感覚と行動の関係に用いられてきたActive Inferenceのような脳を予測生成モデルとして考えるアプローチを内受容感覚に関して用いることで、主観的な感情、意識体験やそれに紐づいた身体所有感覚、精神疾患の認知メカニズムについて予測脳という枠組みが重要であることを示唆している。",
+        "memo": "内受容推論における予測修正と恒常性調節という2つの予測誤差修正、前部島皮質のfMRIと予測誤差符号化の相関についても述べられている。rubber hand illusionの話も出てきた。",
+        "tags": [
+            "interoceptiveInference",
+            "emotion",
+            "insula",
+            "allostasis"
+        ]
+    },
+    {
+        "ID": "gu2014interoceptive",
+        "author": "Gu, Xiaosi and FitzGerald, Thomas HB",
+        "year": "2014",
+        "title": "Interoceptive inference: homeostasis and decision-making",
+        "abstract": "内的な恒常性維持だけでなく、外部との相互作用の結果として起こる変化に適応していくプロセス=アロスタシスもinteroceptive inferenceで説明できるとしている。",
+        "memo": "島皮質での内受容符号化やSomatic Marker Hypothesisの考えも包含できるらしい。",
+        "tags": [
+            "interoceptiveInference",
+            "insula",
+            "SMH",
+            "allostasis"
+        ]
+    },
+    {
+        "ID": "hulme2019neurocomputational",
+        "author": "Hulme, Oliver J and Morville, Tobias and Gutkin, Boris",
+        "year": "2019",
+        "title": "Neurocomputational theories of homeostatic control",
+        "abstract": "ホメオスタシスに関する理論を行動制御、予測の面から議論する。Drive Reduction理論を初めとした恒常性制御手法が簡潔な生存につながる行動原理しか説明できないこと、強化学習に利用された恒常性強化学習では報酬値とホメオスタシスの状態を対応付けるドライブ関数を用いることでその関数への制約がリスク回避行動や内受容感覚間の相互作用などを説明することができることが述べられている。",
+        "memo": "予測誤差を最小化することに関連して、Active Inferrenceの理論との対応、アロスタシス制御についても述べられている。",
+        "tags": [
+            "RL",
+            "interoceptiveInference",
+            "allostasis"
+        ]
+    },
+    {
+        "ID": "nikolova2022might",
+        "author": "Nikolova, Niia and Waade, Peter Thestrup and Friston, Karl J and Allen, Micah",
+        "year": "2022",
+        "title": "What might interoceptive inference reveal about consciousness?",
+        "abstract": "さまざまな意識理論に平行して発展している内受容推論について、主観的な意識、情動、また外受容の形成への影響を論じている。また意識理論である高次思考理論、グローバルワークスペース理論、情報統合理論との対応づけも行い、皮質の階層と内受容的な予測誤差がどう結びついているのかを議論している。",
+        "memo": "内受容推論が意識研究に良い進展を与えるかについては不明。",
+        "tags": [
+            "interoceptiveInference",
+            "emotion"
+        ]
+    },
+    {
+        "ID": "subramanian2024interoceptive",
+        "author": "Subramanian, Madhav and Thaiss, Christoph A",
+        "year": "2024",
+        "title": "Interoceptive inference and prediction in food-related disorders",
+        "abstract": "脳の予測アプローチが摂食行動制御の観点で説明しうる戦略、摂食関連障害について述べている。環境に対するアロスタシス的味覚予測が新しい環境における大きな予測誤差を生み出し、それが糖尿病のような代謝や身体調節の不全を引き起こしている可能性がある。",
+        "memo": "内的な管理と外的な適応のバランスが摂食行動にも当てはまるかと思ったが、意外とinstinctなものとして片付けられそうとmeetingで言われた。",
+        "tags": [
+            "interoceptiveInference",
+            "allostasis"
+        ]
+    },
+    {
+        "ID": "gogolla2017insular",
+        "author": "Gogolla, Nadine",
+        "year": "2017",
+        "title": "The insular cortex",
+        "abstract": "島皮質について、広い領域からの投射を受け、top-down、bottom-up経路両方に関わっている。脳のhub。",
+        "memo": "neuromodulationでいうと、NE, Dopamine, Ach, 5-HTの経路があるらしい。",
+        "tags": [
+            "insula",
+            "neuromodulation"
+        ]
+    },
+    {
+        "ID": "fermin2022insula",
+        "author": "Fermin, Alan SR and Friston, Karl and Yamawaki, Shigeto",
+        "year": "2022",
+        "title": "An insula hierarchical network architecture for active interoceptive inference",
+        "abstract": "島皮質は不明瞭な点が多いが、autonomic neuvous systemとのつながり、PFCとのつながりから内受容感覚と脳の高次領域との階層構造を提案し、内受容推論とのつながりについて述べている。",
+        "memo": "線条体を介したDopamine系経路が押されていて、そのつながりかたもいくつか考えられる。",
+        "tags": [
+            "insula",
+            "interoceptiveInference"
+        ]
+    },
+    {
+        "ID": "uddin2017structure",
+        "author": "Uddin, Lucina Q and Nomi, Jason S and H{\\'e}bert-Seropian, Benjamin and Ghaziri, Jimmy and Boucher, Olivier",
+        "year": "2017",
+        "title": "Structure and function of the human insula",
+        "abstract": "島皮質について。その構造、auditory function、体性感覚モニター、リスク下意思決定、情動、empathy、社会的経験、attentionが述べられている。",
+        "memo": "もっと読みたい。",
+        "tags": [
+            "insula",
+            "SMH",
+            "emotion"
+        ]
+    },
+    {
+        "ID": "sartre1971sketch",
+        "author": "Sartre, Jean-Paul",
+        "year": "1971",
+        "title": "Sketch for a Theory of the Emotions",
+        "abstract": "サルトルによる現象学的、心理学的な視点からの情動論。情動は世界の知覚を変えること。",
+        "memo": "情動の目的性。世界との行為のやりとりがあり、それが変容することへの意識が情動であると述べていたり、それが魔術的という形容を使っていた(おそらく劇的という話であろう)。",
+        "tags": [
+            "emotion",
+            "phenomenology"
+        ]
+    },
+    {
+        "ID": "澤田唯人2013感情的な身体",
+        "author": "澤田唯人",
+        "year": "2013",
+        "title": "感情的な身体 感情的行為論の礎石",
+        "abstract": "サルトルなどによる現象学的情動理論をまとめてくれている。",
+        "memo": "もっと読みたい",
+        "tags": [
+            "emotion",
+            "phenomenology"
+        ]
+    },
+    {
+        "ID": "barrett2017emotions",
+        "author": "Barrett, Lisa Feldman",
+        "year": "2017",
+        "title": "How emotions are made: The secret life of the brain",
+        "abstract": "情動は身体反応に固有で決まるものではなく、過去の経験などから蓄積された粒度によって毎回構築されて反応として表出するというtheory of constructed emotionsについて。情動の扱いとして、リバースエンジニアリング不可、全体としてしか論じられない、個々のニューロンから予測できない行動の創発、複数のニューロンが一つの反応に対応する縮退が挙げられている。",
+        "memo": "embodied simulationやcontextによって同じ表情やその他の反応でも情動は異なること、amygdala損傷患者にも関わらず情動表現が可能である例などについて述べられている。",
+        "tags": [
+            "emotion"
         ]
     }
 ]
