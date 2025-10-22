@@ -1,6 +1,6 @@
 # paper manager
 
-論文管理アプリが作りたいので、作ります。
+論文管理アプリ
 
 ### how to use
 1. bibtex形式の論文データをpublic/liter.bibに配置。
